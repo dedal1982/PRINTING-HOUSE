@@ -65,7 +65,18 @@ button {
   width: 159px;
   height: 58px;
 }
-
+@media screen and (max-width: 1280px) {
+  .header__logo {
+    width: 100px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
+    width: 63px;
+    height: 23px;
+  }
+}
 .header__menu ul {
   display: flex;
   align-items: center;
