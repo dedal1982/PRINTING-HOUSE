@@ -170,6 +170,11 @@ h1 {
 }
 @media screen and (max-width: 1440px) {
   .product__item {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .product__item {
     padding: 50px 0;
   }
 }
@@ -238,4 +243,39 @@ h1 {
     font-size: 16px;
     line-height: 20.42px;
   }
+}
+/*---consultation---*/
+.consultation {
+  width: 100%;
+}
+.consultation__wrapper {
+  padding: 120px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1440px) {
+  .consultation__wrapper {
+    padding: 100px 0;
+  }
+}
+.consultation__btn {
+  width: 560px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38.28px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.consultation__btn:hover {
+  background: #000;
+  color: #fff;
 }
