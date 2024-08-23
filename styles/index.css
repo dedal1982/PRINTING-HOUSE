@@ -143,12 +143,12 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .product__wrapper {
     grid-template-columns: repeat(3, minmax(auto, 1fr));
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .product__wrapper {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
   }
