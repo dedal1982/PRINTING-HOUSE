@@ -379,3 +379,11 @@ h1 {
     height: 120px;
   }
 }
+/*---technical---*/
+.technical {
+  width: 100%;
+}
+.technical__wrapper {
+  width: 100%;
+  display: flex;
+}
