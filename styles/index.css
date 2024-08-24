@@ -387,19 +387,54 @@ h1 {
   width: 100%;
   display: flex;
 }
+@media screen and (max-width: 1280px) {
+  .technical__wrapper {
+    flex-direction: column;
+  }
+}
 .technical__item {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 120px 190px;
+  padding: 120px 0;
   box-sizing: border-box;
   border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+@media screen and (max-width: 1024px) {
+  .technical__item {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 690px) {
+  .technical__item {
+    padding: 25px 0;
+  }
+}
+.technical__inner {
+  max-width: 567px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+}
+@media screen and (max-width: 690px) {
+  .technical__inner {
+    max-width: 305px;
+    gap: 25px;
+  }
 }
 .technical__image {
   width: 100%;
   height: 621px;
+}
+@media screen and (max-width: 690px) {
+  .technical__image {
+    height: 336px;
+  }
 }
 .technical__image img {
   width: 100%;
@@ -411,9 +446,15 @@ h1 {
   font-size: 30px;
   line-height: 30px;
   color: #000;
-  margin-top: 58px;
   text-align: center;
   max-width: 535px;
+}
+@media screen and (max-width: 690px) {
+  .technical__item p {
+    font-size: 16px;
+    line-height: 16px;
+    max-width: 288px;
+  }
 }
 .technical__btn {
   width: 420px;
@@ -429,9 +470,18 @@ h1 {
   line-height: 38.28px;
   color: #000;
   transition: all 0.2s ease-in-out;
-  margin-top: 48px;
+  margin-top: auto;
 }
 .technical__btn:hover {
   background: #000;
   color: #fff;
+}
+@media screen and (max-width: 690px) {
+  .technical__btn {
+    width: 245px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20.42px;
+  }
 }
