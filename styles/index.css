@@ -405,3 +405,33 @@ h1 {
   width: 100%;
   height: 100%;
 }
+.technical__item p {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+  margin-top: 58px;
+  text-align: center;
+  max-width: 535px;
+}
+.technical__btn {
+  width: 420px;
+  height: 70px;
+  border-radius: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38.28px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+  margin-top: 48px;
+}
+.technical__btn:hover {
+  background: #000;
+  color: #fff;
+}
