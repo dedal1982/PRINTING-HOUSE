@@ -387,3 +387,21 @@ h1 {
   width: 100%;
   display: flex;
 }
+.technical__item {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 190px;
+  box-sizing: border-box;
+  border-right: 1px solid #000;
+}
+.technical__image {
+  width: 100%;
+  height: 621px;
+}
+.technical__image img {
+  width: 100%;
+  height: 100%;
+}
