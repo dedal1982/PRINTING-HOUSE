@@ -792,6 +792,7 @@ button {
 /*---advantages---*/
 .advantages {
   width: 100%;
+  overflow: hidden;
 }
 .swiper-container * {
   margin: 0;
@@ -810,9 +811,21 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 95px;
+  padding-left: 75px;
   box-sizing: border-box;
   border-right: 1px solid #000;
+}
+@media screen and (max-width: 1280px) {
+  .swiper-content {
+    padding-left: 45px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .swiper-content {
+    border-right: none;
+    padding-left: 0;
+    align-items: center;
+  }
 }
 .swiper-content span {
   font-family: "SpaceGrotesk-Regular", sans-serif;

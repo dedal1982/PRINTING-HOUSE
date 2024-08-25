@@ -25,13 +25,13 @@ var sliderSelector = ".swiper-container",
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      1000: {
+      1023: {
         slidesPerView: 2,
         spaceBetween: 0,
       },
-      767: {
-        slidesPerView: 2,
-        spaceBetween: -80,
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
     },
   };
