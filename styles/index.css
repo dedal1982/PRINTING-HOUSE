@@ -863,7 +863,7 @@ button {
     max-width: 245px;
   }
 }
-.swiper-content a {
+.swiper-btn {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-size: 30px;
   letter-spacing: -0.05em;
@@ -879,12 +879,12 @@ button {
   margin-top: 66px;
   transition: all 0.2s ease-in-out;
 }
-.swiper-content:hover {
+.swiper-btn:hover {
   color: #fff;
   background: #000;
 }
 @media screen and (max-width: 690px) {
-  .swiper-content a {
+  .swiper-btn {
     width: 245px;
     height: 29px;
     border-radius: 20px;
