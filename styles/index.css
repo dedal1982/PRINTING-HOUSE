@@ -827,12 +827,23 @@ button {
     align-items: center;
   }
 }
+@media screen and (max-width: 690px) {
+  .swiper-content {
+    height: 290px;
+  }
+}
 .swiper-content span {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 20px;
   color: #000;
+}
+@media screen and (max-width: 690px) {
+  .swiper-content span {
+    font-size: 18px;
+    line-height: 16px;
+  }
 }
 .swiper-content p {
   font-family: "SpaceGrotesk-Regular", sans-serif;
@@ -844,6 +855,13 @@ button {
   max-width: 400px;
   width: 100%;
   margin-top: 30px;
+}
+@media screen and (max-width: 690px) {
+  .swiper-content p {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 245px;
+  }
 }
 .swiper-content a {
   font-family: "SpaceGrotesk-Regular", sans-serif;
@@ -860,7 +878,16 @@ button {
   justify-content: center;
   margin-top: 66px;
 }
-
+@media screen and (max-width: 690px) {
+  .swiper-content a {
+    width: 245px;
+    height: 29px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20.42px;
+    margin-top: 25px;
+  }
+}
 .swiper-slide-prev,
 .swiper-slide-next {
   transform: translate(0) !important;
