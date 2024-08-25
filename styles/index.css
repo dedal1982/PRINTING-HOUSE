@@ -583,7 +583,6 @@ button {
 /*---mailing---*/
 .mailing {
   width: 100%;
-  border-bottom: 1px solid #000;
 }
 .mailing__wrapper {
   padding-top: 75px;
@@ -636,4 +635,50 @@ button {
     font-size: 25px;
     line-height: 26.25px;
   }
+}
+/*---footer---*/
+.footer {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+.footer__item {
+  border-right: 1px solid #000;
+  padding: 75px;
+  box-sizing: border-box;
+}
+.footer__item:last-child {
+  border-right: none;
+}
+.footer__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer__menu ul li a,
+.footer__menu ul li p {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+}
+.footer__menu ul li a {
+  transition: all 0.2s ease-in-out;
+}
+.footer__menu ul li a:hover {
+  opacity: 0.7;
+}
+.footer__menu ul li {
+  max-width: 398px;
+  width: 100%;
 }
