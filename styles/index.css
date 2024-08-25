@@ -44,6 +44,7 @@ button {
 .header {
   width: 100%;
   display: flex;
+  background: #fff;
 }
 .header__wrapper {
   width: 100%;
@@ -122,7 +123,6 @@ button {
 /*---promo---*/
 .promo {
   width: 100%;
-  border-top: 1px solid #000;
 }
 .promo__wrapper {
   width: 100%;
@@ -779,4 +779,12 @@ button {
     padding-bottom: 25px;
     border-bottom: 1px solid #000;
   }
+}
+#sticky-header {
+  position: sticky;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  top: -145px;
+  transition: top 0.5s ease;
+  border-bottom: 1px solid #000;
 }
