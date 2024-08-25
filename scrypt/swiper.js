@@ -1,7 +1,7 @@
 const swiper = new Swiper(".advantage__swiper", {
   // Optional parameters
   direction: "horizontal",
-  slidesPerView: 2.5,
+  slidesPerView: 1.5,
   spaceBetween: 0,
   loop: true,
   speed: 2500,
