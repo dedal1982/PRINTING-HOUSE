@@ -445,40 +445,105 @@ button {
 .technical {
   width: 100%;
   border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .technical__wrapper {
   width: 100%;
   display: flex;
 }
+@media screen and (max-width: 1023px) {
+  .technical__wrapper {
+    flex-direction: column;
+  }
+}
 .technical__item {
   flex-basis: 50%;
-  padding: 105px 250px;
+  padding: 105px 50px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .technical__item {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .technical__item {
+    padding: 25px 35px;
+  }
+}
+.technical__item:first-child {
+  border-right: 1px solid #000;
+}
+@media screen and (max-width: 1023px) {
+  .technical__item:first-child {
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+}
+.technical__inner {
+  max-width: 567px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-.technical__inner {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 58px;
+@media screen and (max-width: 1280px) {
+  .technical__inner {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .technical__inner {
+    max-width: 305px;
+  }
 }
 .technical__inner img {
   width: 100%;
-  height: 473px;
+  height: 600px;
+  object-fit: contain;
+}
+@media screen and (max-width: 1280px) {
+  .technical__inner img {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .technical__inner img {
+    height: 305px;
+  }
 }
 .technical__inner p {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 30px;
   line-height: 30px;
   color: #000;
+  margin-top: 58px;
+  margin-bottom: 48px;
   text-align: center;
 }
+@media screen and (max-width: 1280px) {
+  .technical__inner p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .technical__inner p {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .technical__inner p {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
 .technical__btn {
-  width: 350px;
+  width: 420px;
   height: 70px;
   border-radius: 37px;
   display: flex;
@@ -490,5 +555,20 @@ button {
   font-size: 30px;
   line-height: 38.28px;
   color: #000;
-  margin-top: 48px;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  margin-top: auto;
+}
+.technical__btn:hover {
+  color: #fff;
+  background: #000;
+}
+@media screen and (max-width: 690px) {
+  .technical__btn {
+    width: 245px;
+    height: 29px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20.42px;
+  }
 }
