@@ -877,6 +877,11 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 66px;
+  transition: all 0.2s ease-in-out;
+}
+.swiper-content:hover {
+  color: #fff;
+  background: #000;
 }
 @media screen and (max-width: 690px) {
   .swiper-content a {
