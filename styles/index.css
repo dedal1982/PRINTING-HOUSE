@@ -410,6 +410,7 @@ button {
   }
   .labels__item:nth-child(6) {
     border-right: none;
+    border-bottom: 1px solid #000;
   }
 }
 @media screen and (max-width: 960px) {
@@ -417,6 +418,12 @@ button {
     border-right: none;
   }
   .labels__item:nth-child(4) {
+    border-right: none;
+  }
+  .labels__item:nth-child(6) {
+    border-right: none;
+  }
+  .labels__item:nth-child(8) {
     border-right: none;
   }
 }
@@ -572,3 +579,4 @@ button {
     line-height: 20.42px;
   }
 }
+/*---mailing---*/
