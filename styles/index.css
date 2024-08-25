@@ -243,6 +243,7 @@ button {
   }
   .product__item:nth-child(6) {
     border-right: none;
+    border-bottom: 1px solid #000;
   }
 }
 @media screen and (max-width: 960px) {
@@ -328,8 +329,8 @@ button {
 }
 @media screen and (max-width: 690px) {
   .consultation__wrapper {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .consultation__btn {
@@ -472,7 +473,7 @@ button {
 }
 @media screen and (max-width: 1024px) {
   .technical__item {
-    padding: 50px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -580,3 +581,59 @@ button {
   }
 }
 /*---mailing---*/
+.mailing {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.mailing__wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .mailing__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .mailing__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.mailing__btn {
+  width: fit-content;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 128px;
+  color: #000;
+}
+@media screen and (max-width: 1440px) {
+  .mailing__btn {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .mailing__btn {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mailing__btn {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .mailing__btn {
+    font-size: 25px;
+    line-height: 26.25px;
+  }
+}
