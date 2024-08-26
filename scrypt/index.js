@@ -16,15 +16,24 @@ function typeText(text) {
   underlineElement.classList.add("blinking-underline");
 
   let index = 0;
+  let currentText = text;
   const intervalId = setInterval(() => {
-    if (index < text.length) {
-      textElement.textContent += text[index];
+    if (index < currentText.length) {
+      textElement.textContent += currentText[index];
       underlineElement.classList.remove("blinking-underline");
-      void underlineElement.offsetWidth; // Trigger reflow to restart animation
+      void underlineElement.offsetWidth;
       underlineElement.classList.add("blinking-underline");
       index++;
     } else {
       clearInterval(intervalId);
+      const typeTextContainer = document.querySelector(".type-text");
+      typeTextContainer.removeChild(typeTextContainer.lastChild);
+      if (currentText === "ЭТИКЕТКИ") {
+        currentText = "НАКЛЕЙКИ";
+      } else {
+        currentText = "ЭТИКЕТКИ";
+      }
+      typeText(currentText);
     }
   }, 200);
 
@@ -37,5 +46,22 @@ function typeText(text) {
   return container;
 }
 
-// Usage example
 typeText("ЭТИКЕТКИ");
+
+//функция появления кнопки "ВВЕРХ" и плавное пролистывание страницы вверх
+const buttonUp = document.querySelector(".button-up");
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset >= 1000) {
+    buttonUp.style.display = "block";
+  } else {
+    buttonUp.style.display = "none";
+  }
+});
+
+buttonUp.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
