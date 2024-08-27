@@ -30,6 +30,8 @@ function typeText(text) {
       typeTextContainer.removeChild(typeTextContainer.lastChild);
       if (currentText === "ЭТИКЕТКИ") {
         currentText = "НАКЛЕЙКИ";
+      } else if (currentText === "НАКЛЕЙКИ") {
+        currentText = "ЦЕННИКИ";
       } else {
         currentText = "ЭТИКЕТКИ";
       }
