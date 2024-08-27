@@ -54,7 +54,7 @@ typeText("ЭТИКЕТКИ");
 const buttonUp = document.querySelector(".button-up");
 
 window.addEventListener("scroll", function () {
-  if (window.pageYOffset >= 100) {
+  if (window.pageYOffset >= 1000) {
     buttonUp.style.display = "block";
   } else {
     buttonUp.style.display = "none";
