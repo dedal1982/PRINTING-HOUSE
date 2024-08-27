@@ -131,9 +131,47 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1024px) {
+  .product-gallery__wrapper {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .product-gallery__wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 .product-gallery__inner {
   display: flex;
   gap: 90px;
+}
+@media screen and (max-width: 1280px) {
+  .product-gallery__inner {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .product-gallery__inner {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .product-gallery__inner {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .product-gallery__inner {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 810px) {
+  .product-gallery__inner {
+    width: 810px;
+    overflow: auto;
+  }
 }
 .product-gallery__item {
   width: 360px;
@@ -145,9 +183,40 @@
   box-sizing: border-box;
   gap: 35px;
 }
+@media screen and (max-width: 1280px) {
+  .product-gallery__item {
+    width: 300px;
+    height: 435px;
+    padding: 32px 35px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .product-gallery__item {
+    width: 270px;
+    height: 347px;
+    padding: 23px 29px;
+    gap: 28px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .product-gallery__item {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+  .product-gallery__item:last-child {
+    border-right: none;
+  }
+}
 .product-gallery__pic {
   width: 100%;
   height: 256px;
+}
+@media screen and (max-width: 960px) {
+  .product-gallery__pic {
+    width: 210px;
+    height: 210px;
+  }
 }
 .product-gallery__pic img {
   width: 100%;
@@ -169,10 +238,22 @@
   line-height: 25px;
   color: #000;
 }
+@media screen and (max-width: 960px) {
+  .product-gallery__text p {
+    font-size: 16px;
+    line-height: 20.24px;
+  }
+}
 .product-gallery__text span {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 32px;
   color: #000;
+}
+@media screen and (max-width: 960px) {
+  .product-gallery__text span {
+    font-size: 16px;
+    line-height: 20.42px;
+  }
 }
