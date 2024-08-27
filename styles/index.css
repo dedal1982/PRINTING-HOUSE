@@ -74,6 +74,15 @@ button {
   padding-right: 75px;
   box-sizing: border-box;
 }
+
+#sticky-header {
+  position: sticky;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  top: -145px;
+  transition: top 0.5s ease;
+  border-bottom: 1px solid #000;
+}
 @media screen and (max-width: 1024px) {
   .header__wrapper {
     padding-left: 70px;
@@ -743,70 +752,32 @@ h1 {
   max-width: 398px;
   width: 100%;
 }
-.footer__social {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(auto, 1fr));
-}
-@media screen and (max-width: 690px) {
-  .footer__social {
-    grid-template-columns: 1fr;
-  }
-}
-.footer__social a {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  box-sizing: border-box;
+.footer__copyright {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 60px 0;
+  box-sizing: border-box;
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 300;
   font-size: 30px;
   line-height: 30px;
   color: #000;
-  background: transparent;
-  border-right: 1px solid #000;
-  transition: all 0.2s ease-in-out;
 }
-@media screen and (max-width: 1280px) {
-  .footer__social a {
-    font-size: 23px;
+@media screen and (max-width: 960px) {
+  .footer__copyright {
+    padding: 40px 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 690px) {
-  .footer__social a {
+  .footer__copyright {
+    padding: 25px 0;
     font-size: 16px;
     line-height: 16px;
-    border-right: none;
   }
-}
-.footer__social a:last-child {
-  border-right: none;
-}
-.footer__social a:hover {
-  background: #000;
-  color: #fff;
-}
-@media screen and (max-width: 1280px) {
-  .footer__social a {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-@media screen and (max-width: 690px) {
-  .footer__social a {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #000;
-  }
-}
-#sticky-header {
-  position: sticky;
-  backdrop-filter: blur(8px);
-  z-index: 100;
-  top: -145px;
-  transition: top 0.5s ease;
-  border-bottom: 1px solid #000;
 }
 /*---advantages---*/
 .advantages {
