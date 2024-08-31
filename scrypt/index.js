@@ -88,11 +88,11 @@ function toggleActive(event) {
   });
 
   if (nestedList) {
-    nestedList.classList.toggle("active");
+    nestedList.classList.add("active");
   }
 
   if (currentTitle) {
-    currentTitle.classList.toggle("active");
+    currentTitle.classList.add("active");
   }
 }
 
