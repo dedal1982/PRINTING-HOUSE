@@ -99,3 +99,12 @@ function toggleActive(event) {
 items.forEach((item) => {
   item.addEventListener("click", toggleActive);
 });
+// Читать полностью...
+const completely = document.querySelector(".description__full");
+const completelyWrap = document.querySelector(".description__wrapper");
+
+if (completely) {
+  completely.addEventListener("click", () => {
+    completelyWrap.classList.add("description__wrapper_full");
+  });
+}

@@ -244,3 +244,39 @@
   line-height: 60px;
   color: #000;
 }
+/*---description---*/
+.description {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.description__wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  max-height: 936px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  overflow: hidden;
+}
+.description__wrapper_full {
+  height: fit-content;
+}
+.description__full {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translate(-50%);
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.description__full:hover {
+  opacity: 0.7;
+}
