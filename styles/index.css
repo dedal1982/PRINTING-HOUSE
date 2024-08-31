@@ -51,6 +51,11 @@ button {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+.container {
+  padding-left: 82px;
+  padding-right: 82px;
+  box-sizing: border-box;
+}
 @media screen and (max-width: 767px) {
   .container {
     padding-left: 35px;
