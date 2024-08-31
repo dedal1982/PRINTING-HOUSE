@@ -65,3 +65,37 @@ buttonUp.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+//функция открывающая список продуктов
+const items = document.querySelectorAll(".products__item");
+
+function toggleActive(event) {
+  const currentItem = event.currentTarget;
+  const nestedList = currentItem.querySelector(".products__list-nested");
+  const currentTitle = currentItem.querySelector(".products__menu-title");
+
+  items.forEach((item) => {
+    const list = item.querySelector(".products__list-nested");
+    const title = item.querySelector(".products__menu-title");
+
+    if (list && list !== nestedList) {
+      list.classList.remove("active");
+    }
+
+    if (title && title !== currentTitle) {
+      title.classList.remove("active");
+    }
+  });
+
+  if (nestedList) {
+    nestedList.classList.toggle("active");
+  }
+
+  if (currentTitle) {
+    currentTitle.classList.toggle("active");
+  }
+}
+
+items.forEach((item) => {
+  item.addEventListener("click", toggleActive);
+});
