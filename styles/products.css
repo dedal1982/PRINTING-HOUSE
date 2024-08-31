@@ -248,21 +248,23 @@
 .description {
   width: 100%;
   border-bottom: 1px solid #000;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+  position: relative;
 }
 .description__wrapper {
-  position: relative;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  box-sizing: border-box;
-  max-height: 936px;
+  max-height: 700px;
   display: flex;
   flex-direction: column;
   gap: 60px;
   overflow: hidden;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 .description__wrapper_full {
-  height: fit-content;
+  max-height: fit-content;
 }
 .description__full {
   position: absolute;
@@ -279,4 +281,23 @@
 }
 .description__full:hover {
   opacity: 0.7;
+}
+.description__wrapper h3 {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+}
+.description__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.description__paragraph p {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
 }

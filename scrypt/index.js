@@ -105,6 +105,6 @@ const completelyWrap = document.querySelector(".description__wrapper");
 
 if (completely) {
   completely.addEventListener("click", () => {
-    completelyWrap.classList.add("description__wrapper_full");
+    completelyWrap.classList.toggle("description__wrapper_full");
   });
 }
