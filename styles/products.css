@@ -237,7 +237,7 @@
   height: 100%;
   object-fit: cover;
 }
-.products__desc {
+.products__subtitle {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
   font-size: 50px;
