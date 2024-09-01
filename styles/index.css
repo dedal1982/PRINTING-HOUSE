@@ -57,13 +57,13 @@ button {
   padding-right: 82px;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1540px) {
+/* @media screen and (max-width: 1540px) {
   .container {
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
   }
-}
+} */
 @media screen and (max-width: 767px) {
   .container {
     padding-left: 35px;
