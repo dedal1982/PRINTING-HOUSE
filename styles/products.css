@@ -623,6 +623,7 @@
 @media screen and (max-width: 1080px) {
   .description__wrapper {
     gap: 40px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -718,18 +719,24 @@
 }
 @media screen and (max-width: 1279px) {
   .description__paragraph {
-    max-height: 265px;
+    max-height: 290px;
   }
 }
 @media screen and (max-width: 959px) {
   .description__paragraph {
-    max-height: 290px;
+    max-height: 320px;
   }
 }
 @media screen and (max-width: 690px) {
   .description__paragraph {
     max-height: 437px;
     gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .description__paragraph {
+    margin-bottom: 0;
   }
 }
 .description__paragraph_full {
@@ -738,6 +745,7 @@
 @media screen and (max-width: 690px) {
   .description__paragraph_full {
     padding-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 .description__paragraph p {
