@@ -101,11 +101,11 @@ buttonUp.addEventListener("click", function () {
 // });
 // Читать полностью...
 const completely = document.querySelector(".description__full");
-const completelyWrap = document.querySelector(".description__wrapper");
+const completelyWrap = document.querySelector(".description__paragraph");
 
 if (completely) {
   completely.addEventListener("click", () => {
-    completelyWrap.classList.toggle("description__wrapper_full");
+    completelyWrap.classList.toggle("description__paragraph_full");
 
     if (completely.textContent === "Назад") {
       completely.textContent = "Читать полностью...";
