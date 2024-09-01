@@ -182,6 +182,12 @@
     gap: 30px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .products__menu {
+    max-width: 300px;
+    padding-right: 35px;
+  }
+}
 .products__menu h2 {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
@@ -241,6 +247,12 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .products__menu h4 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 .products__list-nested {
   display: none;
   flex-direction: column;
@@ -254,6 +266,11 @@
 @media screen and (max-width: 1279px) {
   .products__list-nested {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .products__list-nested {
+    gap: 15px;
   }
 }
 .products__list-nested.active {
@@ -278,6 +295,12 @@
     line-height: 18px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .products__list-nested li a {
+    font-size: 17px;
+    line-height: 17px;
+  }
+}
 .products__hero {
   width: 100%;
   padding-bottom: 60px;
@@ -289,6 +312,11 @@
 @media screen and (max-width: 1540px) {
   .products__hero {
     padding-left: 50px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .products__hero {
+    padding-left: 35px;
   }
 }
 .products__inner {
@@ -334,6 +362,11 @@
     height: 480px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .products__images {
+    height: 450px;
+  }
+}
 .products__img {
   max-width: 559px;
   height: 100%;
@@ -371,6 +404,12 @@
   .products__subtitle {
     font-size: 30px;
     line-height: 38px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .products__subtitle {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 /*---description---*/
