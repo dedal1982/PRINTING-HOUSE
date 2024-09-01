@@ -342,9 +342,6 @@
   .products__img {
     max-width: 100%;
   }
-  .products__img-l {
-    display: none;
-  }
 }
 .products__img img {
   width: 100%;
