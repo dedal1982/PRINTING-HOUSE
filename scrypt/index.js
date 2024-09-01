@@ -138,8 +138,10 @@ if (itemsMobile) {
   itemsMobile.forEach((item) => {
     item.addEventListener("click", () => {
       const nestedList = item.querySelector(".products__list-nested");
+      const titleMobile = item.querySelector(".products__menu-title");
       if (nestedList) {
         nestedList.classList.toggle("active");
+        titleMobile.classList.toggle("active");
       }
     });
   });
