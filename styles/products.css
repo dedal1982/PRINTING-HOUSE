@@ -167,12 +167,13 @@
     max-width: 440px;
     padding-top: 50px;
     padding-bottom: 80px;
-    gap: 40px;
+    gap: 37px;
   }
 }
 @media screen and (max-width: 1439px) {
   .products__menu {
     max-width: 400px;
+    gap: 35px;
   }
 }
 .products__menu h2 {
@@ -235,6 +236,12 @@
   font-size: 25px;
   line-height: 25px;
   color: #000;
+}
+@media screen and (max-width: 1439px) {
+  .products__list-nested li a {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 .products__hero {
   width: 100%;
