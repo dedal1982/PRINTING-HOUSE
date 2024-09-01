@@ -231,6 +231,11 @@
     gap: 30px;
   }
 }
+@media screen and (max-width: 960px) {
+  .products__item {
+    display: none;
+  }
+}
 .products__menu h4 {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
@@ -352,6 +357,12 @@
 @media screen and (max-width: 1279px) {
   .products__inner {
     gap: 40px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .products__inner {
+    flex-direction: column-reverse;
+    gap: 30px;
   }
 }
 .products__images {
