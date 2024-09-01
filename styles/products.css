@@ -383,6 +383,12 @@
     line-height: 20px;
   }
 }
+@media screen and (max-width: 690px) {
+  .products__menu h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 .products__list-nested {
   display: none;
   flex-direction: column;
