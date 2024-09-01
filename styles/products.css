@@ -144,8 +144,6 @@
 }
 .products__wrapper {
   display: flex;
-}
-.container {
   padding-left: 82px;
   padding-right: 82px;
   box-sizing: border-box;
@@ -166,7 +164,6 @@
   .products__wrapper {
     padding-left: 35px;
     padding-right: 35px;
-    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 690px) {
@@ -610,7 +607,6 @@
 }
 .description__wrapper {
   width: 100%;
-  max-height: 700px;
   display: flex;
   flex-direction: column;
   gap: 60px;

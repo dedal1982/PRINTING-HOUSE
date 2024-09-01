@@ -52,6 +52,25 @@ button {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+.container {
+  padding-left: 82px;
+  padding-right: 82px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
 /*---header---*/
 .header {
   width: 100%;
