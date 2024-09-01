@@ -116,15 +116,13 @@ if (completely) {
 }
 //фильтры
 const filtersBtn = document.querySelector(".products__filters");
-const itemsProducts = document.querySelectorAll(".products__item");
+const itemsProducts = document.querySelector(".products__items");
 const itemsProductsTitle = document.querySelectorAll(".products__menu-title");
 const itemsProductsList = document.querySelectorAll(".products__list-nested");
 
 if (filtersBtn) {
   filtersBtn.addEventListener("click", () => {
-    itemsProducts.forEach((item) => {
-      item.classList.toggle("active");
-    });
+    itemsProducts.classList.toggle("active");
     itemsProductsList.forEach((item) => {
       item.classList.remove("active");
     });
