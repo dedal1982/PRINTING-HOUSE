@@ -132,17 +132,33 @@ if (filtersBtn) {
   });
 }
 
-const itemsMobile = document.querySelectorAll(".products__items");
+// Функция для выполнения основного кода
+function initializeScript() {
+  const itemsMobile = document.querySelectorAll(".products__item");
 
-if (itemsMobile) {
-  itemsMobile.forEach((item) => {
-    item.addEventListener("click", () => {
-      const nestedList = item.querySelector(".products__list-nested");
-      const titleMobile = item.querySelector(".products__menu-title");
-      if (nestedList) {
-        nestedList.classList.toggle("active");
-        titleMobile.classList.toggle("active");
-      }
+  if (itemsMobile.length) {
+    itemsMobile.forEach((item) => {
+      item.addEventListener("click", () => {
+        const nestedList = item.querySelector(".products__list-nested");
+        const titleMobile = item.querySelector(".products__menu-title");
+        if (nestedList) {
+          nestedList.classList.toggle("active");
+          titleMobile.classList.toggle("active");
+        }
+      });
     });
-  });
+  }
 }
+
+// Проверяем ширину экрана и вызываем функцию при необходимости
+function checkScreenSize() {
+  if (window.matchMedia("(max-width: 690px)").matches) {
+    initializeScript();
+  }
+}
+
+// Запускаем проверку при загрузке страницы
+checkScreenSize();
+
+// Запускаем проверку при изменении размера окна
+window.addEventListener("resize", checkScreenSize);

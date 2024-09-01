@@ -1,0 +1,8 @@
+.products__list-nested li a.active {
+  border-bottom: 1px solid #000;
+}
+@media screen and (max-width: 692px) {
+  .products__menu-title {
+    border-bottom: none !important;
+  }
+}
