@@ -347,7 +347,7 @@
 .products__item.active {
   display: flex;
 }
-.products__menu h4 {
+.products__menu-title {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -357,32 +357,32 @@
   transition: all 0.2s ease-in-out;
   width: fit-content;
 }
-.products__menu h4:hover {
+.products__menu-title:hover {
   opacity: 0.7;
 }
-.products__menu h4.active {
+.products__menu-title.active {
   border-bottom: 2px solid #000;
 }
 @media screen and (max-width: 1439px) {
-  .products__menu h4 {
+  .products__menu-title h4 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 1279px) {
-  .products__menu h4 {
+  .products__menu-title h4 {
     font-size: 22px;
     line-height: 22px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .products__menu h4 {
+  .products__menu-title h4 {
     font-size: 20px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 690px) {
-  .products__menu h4 {
+  .products__menu-title h4 {
     font-size: 16px;
     line-height: 16px;
   }
