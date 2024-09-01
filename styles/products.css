@@ -328,6 +328,14 @@
   max-width: 559px;
   height: 100%;
 }
+@media screen and (max-width: 1023px) {
+  .products__img {
+    max-width: 100%;
+  }
+  .products__img-l {
+    display: none;
+  }
+}
 .products__img img {
   width: 100%;
   height: 100%;
