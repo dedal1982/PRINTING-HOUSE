@@ -131,3 +131,16 @@ if (filtersBtn) {
     });
   });
 }
+
+const itemsMobile = document.querySelectorAll(".products__items");
+
+if (itemsMobile) {
+  itemsMobile.forEach((item) => {
+    item.addEventListener("click", () => {
+      const nestedList = item.querySelector(".products__list-nested");
+      if (nestedList) {
+        nestedList.classList.toggle("active");
+      }
+    });
+  });
+}
