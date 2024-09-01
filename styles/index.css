@@ -735,7 +735,7 @@ h1 {
 }
 .footer__menu ul li a,
 .footer__menu ul li p {
-  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-family: "SpaceGrotesk-Light", sans-serif;
   font-weight: 300;
   font-size: 30px;
   line-height: 30px;
@@ -771,7 +771,7 @@ h1 {
   justify-content: center;
   padding: 60px 0;
   box-sizing: border-box;
-  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-family: "SpaceGrotesk-Light", sans-serif;
   font-weight: 300;
   font-size: 30px;
   line-height: 30px;
@@ -835,7 +835,7 @@ h1 {
   }
 }
 .swiper-content span {
-  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-family: "SpaceGrotesk-Light", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 20px;

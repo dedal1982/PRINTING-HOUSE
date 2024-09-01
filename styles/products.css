@@ -199,7 +199,7 @@
   display: flex;
 }
 .products__list-nested li a {
-  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-family: "SpaceGrotesk-Light", sans-serif;
   font-weight: 300;
   font-size: 25px;
   line-height: 25px;

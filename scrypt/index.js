@@ -106,5 +106,11 @@ const completelyWrap = document.querySelector(".description__wrapper");
 if (completely) {
   completely.addEventListener("click", () => {
     completelyWrap.classList.toggle("description__wrapper_full");
+
+    if (completely.textContent === "Назад") {
+      completely.textContent = "Читать полностью...";
+    } else {
+      completely.textContent = "Назад";
+    }
   });
 }
