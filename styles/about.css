@@ -223,3 +223,28 @@ textarea::placeholder,
   line-height: 30px;
   color: #000;
 }
+.connection__info {
+  max-width: 377px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.connection__info h3 {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+  margin-bottom: 70px;
+}
+.connection__info p,
+.connection__info a {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+}
+.connection__info p {
+  margin-bottom: 40px;
+}
