@@ -40,3 +40,36 @@
   height: 100%;
   object-fit: cover;
 }
+/*---show-more---*/
+.show-more {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.show-more__wrapper {
+  width: 100%;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-more__btn {
+  width: 422px;
+  height: 70px;
+  border-radius: 37px;
+  border: 1px solid #000000;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38.28px;
+  color: #000;
+}
+.show-more__btn:hover {
+  color: #fff;
+  background: #000;
+}
