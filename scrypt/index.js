@@ -162,3 +162,5 @@ checkScreenSize();
 
 // Запускаем проверку при изменении размера окна
 window.addEventListener("resize", checkScreenSize);
+
+/////////////////
