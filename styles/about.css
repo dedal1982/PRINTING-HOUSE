@@ -1,0 +1,48 @@
+.about {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.about__wrapper {
+  display: flex;
+}
+.about__item {
+  flex-basis: 50%;
+  padding-top: 95px;
+  padding-bottom: 102px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.about__item:first-child {
+  border-right: 1px solid #000;
+}
+.about__text {
+  max-width: 698px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about__text h3 {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+}
+.about__text p {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  color: #000;
+}
+.about__image {
+  width: 736px;
+  height: 624px;
+}
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
