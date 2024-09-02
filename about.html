@@ -195,17 +195,18 @@
               <div class="connection__form">
                 <h3>Свяжитесь с нами</h3>
                 <form class="form">
-                  <textarea placeholder="Введите Ваше сообщение"></textarea>
-                  <div class=""></div>
-                  <input type="text" placeholder="Имя" name="name" />
-
-                  <input type="email" placeholder="Email" name="email" />
-
+                  <textarea placeholder="Введите текст..."></textarea>
+                  <div class="form-item">
+                    <input type="text" placeholder="Ваше имя" name="name" />
+                    <input type="email" placeholder="e-mail" name="email" />
+                  </div>
                   <label>
                     <input type="checkbox" name="consent" />
-                    Я согласен на обработку персональных данных
+                    <div class="form-data">
+                      Нажимая на кнопку, вы даете согласие на
+                      <a href="#">обработку своих персональных данных</a>
+                    </div>
                   </label>
-
                   <button type="submit">Отправить</button>
                 </form>
               </div>
