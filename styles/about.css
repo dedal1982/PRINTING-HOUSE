@@ -112,9 +112,8 @@
   padding-bottom: 95px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 95px;
+  justify-content: center;
 }
 .connection__top {
   display: flex;
@@ -248,7 +247,9 @@ textarea::placeholder,
 .connection__info p {
   margin-bottom: 40px;
 }
-.connection__map {
+/*---map---*/
+.map {
   width: 100%;
   height: 600px;
+  margin-bottom: 95px;
 }
