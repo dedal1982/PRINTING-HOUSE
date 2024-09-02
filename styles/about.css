@@ -248,3 +248,7 @@ textarea::placeholder,
 .connection__info p {
   margin-bottom: 40px;
 }
+.connection__map {
+  width: 100%;
+  height: 600px;
+}
