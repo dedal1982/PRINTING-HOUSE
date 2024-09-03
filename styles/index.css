@@ -147,13 +147,22 @@ button {
 }
 .header__burger {
   display: none;
-  width: 42px;
-  height: 10px;
   background: transparent;
 }
 @media screen and (max-width: 1024px) {
   .header__burger {
     display: block;
+    width: 42px;
+    height: 12px;
+    background: url("../icons/burger.png");
+    background-repeat: no-repeat;
+  }
+  .header__burger.active {
+    background: url("../icons/close.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
   }
 }
 .header__burger img {
@@ -905,4 +914,27 @@ h1 {
 }
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
+}
+/*---menu-mobile---*/
+.menu-mobile {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 0;
+  height: 100dvh;
+  background: red;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.menu-mobile_open {
+  width: 70%;
+}
+.menu-mobile__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.lock {
+  overflow: hidden;
 }

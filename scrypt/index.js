@@ -163,4 +163,12 @@ checkScreenSize();
 // Запускаем проверку при изменении размера окна
 window.addEventListener("resize", checkScreenSize);
 
-/////////////////
+//мобильное меню
+const menuMobile = document.querySelector(".menu-mobile");
+const headerBurger = document.querySelector(".header__burger");
+
+headerBurger.addEventListener("click", () => {
+  menuMobile.classList.toggle("menu-mobile_open");
+  headerBurger.classList.toggle("active");
+  document.body.classList.toggle("lock");
+});
