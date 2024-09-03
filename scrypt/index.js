@@ -172,3 +172,12 @@ headerBurger.addEventListener("click", () => {
   headerBurger.classList.toggle("active");
   document.body.classList.toggle("lock");
 });
+
+//перебор ссылок моб. меню и закрытие его при клике
+const menuLinks = document.querySelectorAll(".header__menu_mobile ul li a");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuMobile.classList.remove("menu-mobile_open");
+  });
+});
