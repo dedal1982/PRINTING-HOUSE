@@ -1,0 +1,18 @@
+.about__image_type_product {
+  width: 511px;
+  height: 618px;
+}
+.about__image_type_product-two {
+  width: 733px;
+  height: 551px;
+}
+.product-gallery_type_product {
+  border-bottom: 1px solid #000;
+}
+.about__image_type_product_three {
+  width: 585px;
+  height: 701px;
+}
+.about_type_product {
+  border-bottom: none;
+}
