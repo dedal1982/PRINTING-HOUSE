@@ -7,8 +7,7 @@
 }
 .about__item {
   flex-basis: 50%;
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding: 95px 35px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -35,11 +34,8 @@
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  line-height: 48px;
-  color: #000;
-}
-.about__text_type_video p {
   line-height: 36px;
+  color: #000;
 }
 .about__image {
   width: 736px;
