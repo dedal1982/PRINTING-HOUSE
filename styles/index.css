@@ -922,19 +922,49 @@ h1 {
   left: 0;
   width: 0;
   height: 100dvh;
-  background: red;
+  background: #fff;
   display: flex;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   overflow: hidden;
+  border-top: 1px solid #000;
 }
 .menu-mobile_open {
-  width: 70%;
+  width: 100%;
 }
 .menu-mobile__wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 42px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.menu-mobile__wrapper img {
+  width: 258px;
+  height: 258px;
 }
 .lock {
   overflow: hidden;
+}
+.header__menu_mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.header__menu_mobile ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu_mobile ul li img {
+  width: 7px;
+  height: 12px;
+}
+.header__menu_mobile ul li a {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  color: #000;
 }
