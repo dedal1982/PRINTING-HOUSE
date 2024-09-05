@@ -5,6 +5,12 @@
   flex-direction: column;
   gap: 60px;
 }
+@media screen and (max-width: 690px) {
+  .news__desc {
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
 .news__desc h3 {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
@@ -18,4 +24,19 @@
   font-size: 30px;
   line-height: 36px;
   color: #000;
+}
+@media screen and (max-width: 690px) {
+  .news__desc h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .news__desc p {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+.news__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
