@@ -594,6 +594,11 @@ textarea::placeholder,
   align-items: center;
   padding: 95px 35px;
 }
+@media screen and (max-width: 960px) {
+  .equipment__wrapper {
+    padding: 40px 35px;
+  }
+}
 .equipment__text {
   max-width: 1352px;
   width: 100%;
@@ -601,6 +606,17 @@ textarea::placeholder,
   flex-direction: column;
   align-items: center;
   gap: 60px;
+}
+@media screen and (max-width: 960px) {
+  .equipment__text {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .equipment__text {
+    gap: 25px;
+    align-items: flex-start;
+  }
 }
 .equipment__text h2 {
   font-family: "SpaceGrotesk-Regular", sans-serif;
@@ -616,6 +632,39 @@ textarea::placeholder,
   line-height: 36px;
   color: #000;
   text-align: center;
+}
+@media screen and (max-width: 1360px) {
+  .equipment__text h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .equipment__text p {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .equipment__text h2 {
+    font-size: 40px;
+    line-height: 37px;
+  }
+  .equipment__text p {
+    font-size: 25px;
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .equipment__text h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .equipment__text p {
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: start;
+  }
 }
 /*---.equipment__swiper---*/
 .slick-center .slick-slide {
