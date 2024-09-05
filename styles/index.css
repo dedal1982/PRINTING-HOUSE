@@ -41,6 +41,11 @@ button {
   color: #fff;
   background: #000;
 }
+@media screen and (max-width: 690px) {
+  .button-up {
+    right: 15px;
+  }
+}
 .page {
   max-width: 1920px;
   width: 100%;
