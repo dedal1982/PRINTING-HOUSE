@@ -582,7 +582,38 @@ textarea::placeholder,
 .map {
   width: 100%;
   height: 600px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin-bottom: 95px;
+  box-sizing: border-box;
+}
+.map_type_contact {
+  max-width: 1302px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .map {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 85px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 65px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .map {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .map_type_contact {
+    height: 190px;
+  }
 }
 /*---equipment---*/
 .equipment {

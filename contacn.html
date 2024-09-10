@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>Новости</title>
+    <title>Контакты</title>
   </head>
   <body>
     <div class="page">
@@ -59,43 +59,46 @@
         </div>
       </header>
       <main>
-        <section class="news">
-          <div class="news__wrapper">
-            <div class="news__image">
-              <img src="./images/news-1.jpg" alt="картинка" />
+        <section class="connection">
+          <div class="connection__wrapper">
+            <div class="connection__top">
+              <div class="connection__form">
+                <h3>Свяжитесь с нами</h3>
+                <form class="form">
+                  <textarea placeholder="Введите текст..."></textarea>
+                  <div class="form-item">
+                    <input type="text" placeholder="Ваше имя" name="name" />
+                    <input type="email" placeholder="e-mail" name="email" />
+                  </div>
+                  <label>
+                    <input type="checkbox" name="consent" />
+                    <div class="form-data">
+                      Нажимая на кнопку, вы даете согласие на
+                      <a href="#">обработку своих персональных данных</a>
+                    </div>
+                  </label>
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+              <div class="connection__info">
+                <h3>Типография ООО «ММС»</h3>
+                <p>
+                  Объездное шоссе, 12<br />
+                  МО, г.&nbsp;Балашиха
+                </p>
+                <a href="tel:84959631300">+7 (495) 963-13-00</a>
+                <a href="mailto:manager@mmslabel.ru">manager@mmslabel.ru</a>
+              </div>
             </div>
-            <div class="news__text">
-              <span>09/07/2024</span>
-              <h2>Что означает зачеркнутый треугольник на&nbsp;бирке одежды</h2>
-            </div>
-            <a class="news__btn" href="#">Читать больше</a>
           </div>
         </section>
-        <section class="news">
-          <div class="news__wrapper">
-            <div class="news__image">
-              <img src="./images/news-2.jpg" alt="картинка" />
-            </div>
-            <div class="news__text">
-              <span>10/12/2023</span>
-              <h2>
-                Процесс создания идеальной этикетки: от&nbsp;идеи до&nbsp;печати
-              </h2>
-            </div>
-            <a class="news__btn" href="#">Читать больше</a>
-          </div>
-        </section>
-        <section class="news">
-          <div class="news__wrapper">
-            <div class="news__image">
-              <img src="./images/news-3.jpg" alt="картинка" />
-            </div>
-            <div class="news__text">
-              <span>10/12/2023</span>
-              <h2>Тренды в&nbsp;дизайне этикеток на&nbsp;2024 год</h2>
-            </div>
-            <a class="news__btn" href="#">Читать больше</a>
-          </div>
+        <section class="map map_type_contact">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A08175a7da6b4de1f94bcc46285353b155324383203674c17070bcd2b1fecd0f8&amp;width=100%25&amp;height=auto&amp;lang=ru_RU&amp;scroll=false"
+          ></script>
         </section>
       </main>
       <!--кнопка вверх-->
