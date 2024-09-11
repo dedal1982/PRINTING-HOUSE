@@ -794,6 +794,7 @@
   .description__paragraph p {
     font-size: 20px;
     line-height: 25px;
+    text-indent: 20px;
   }
 }
 @media screen and (max-width: 779px) {
@@ -806,5 +807,6 @@
   .description__paragraph p {
     font-size: 16px;
     line-height: 19px;
+    text-indent: 10px;
   }
 }
