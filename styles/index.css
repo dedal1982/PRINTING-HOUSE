@@ -346,6 +346,12 @@ h1 {
     height: 305px;
   }
 }
+@media screen and (max-width: 690px) {
+  .product__inner img {
+    width: 100%;
+    height: 305px;
+  }
+}
 .product__name {
   max-width: 290px;
   font-family: "SpaceGrotesk-Regular", sans-serif;
@@ -732,9 +738,9 @@ h1 {
   padding: 100px 120px;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .footer__item {
-    padding: 70px;
+    padding: 50px;
   }
 }
 @media screen and (max-width: 960px) {
