@@ -285,7 +285,6 @@ h1 {
   }
 }
 .product__item {
-  height: 640px;
   border-right: 1px solid #000000;
   display: flex;
   flex-direction: column;
@@ -306,10 +305,6 @@ h1 {
     border-right: none;
   }
 }
-@media screen and (max-width: 1400px) {
-  .product__item {
-  }
-}
 @media screen and (max-width: 1400px) and (min-width: 960px) {
   .product__item:nth-child(3) {
     border-right: none;
@@ -319,15 +314,36 @@ h1 {
     border-bottom: 1px solid #000;
   }
 }
+@media screen and (max-width: 1280px) {
+  .product__item {
+    padding: 60px 0;
+  }
+  .product__item:nth-child(5) {
+    border-bottom: 1px solid #000;
+  }
+  .product__item:nth-child(4) {
+    border-bottom: none;
+  }
+}
 @media screen and (max-width: 960px) {
   .product__item:nth-child(even) {
     border-right: none;
+  }
+  .product__item:nth-child(5) {
+    border-bottom: none;
+  }
+  .product__item:nth-child(6) {
+    border-bottom: 1px solid #000;
   }
 }
 
 @media screen and (max-width: 690px) {
   .product__item {
     border-right: none;
+    padding: 40px 0;
+  }
+  .product__item:nth-child(6) {
+    border-bottom: none;
   }
 }
 .product__inner {
@@ -337,6 +353,11 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 1280px) {
+  .product__inner {
+    width: 250px;
+  }
+}
 .product__img {
   width: 100%;
   height: 240px;
@@ -344,6 +365,11 @@ h1 {
 }
 .product__img_rott {
   transform: rotate(-20deg);
+}
+@media screen and (max-width: 1024px) {
+  .product__img {
+    height: 230px;
+  }
 }
 .product__inner p {
   width: 100%;
@@ -363,6 +389,34 @@ h1 {
   color: #000;
   margin-top: auto;
   align-self: flex-start;
+}
+@media screen and (max-width: 1280px) {
+  .product__inner p {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .product__img {
+    height: 210px;
+  }
+  .product__inner span {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .product__inner p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .product__img {
+    height: 210px;
+  }
+  .product__inner span {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 /*---consultation---*/
 .consultation {
