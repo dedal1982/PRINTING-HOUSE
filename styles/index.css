@@ -296,7 +296,7 @@ h1 {
   border-top: 1px solid #000;
 }
 .product__item:nth-child(4) {
-  /* border-bottom: 1px solid #000; */
+  border-bottom: 1px solid #000;
 }
 @media screen and (min-width: 1400px) {
   .product__item:nth-child(4) {
@@ -331,7 +331,7 @@ h1 {
   }
 }
 .product__inner {
-  width: 350px;
+  width: 290px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -346,6 +346,7 @@ h1 {
   transform: rotate(-20deg);
 }
 .product__inner p {
+  width: 100%;
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
   font-size: 30px;
