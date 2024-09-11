@@ -177,11 +177,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
   border-right: 1px solid #000;
   padding-top: 95px;
   padding-right: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 1540px) {
@@ -281,7 +281,7 @@
 .products__items {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
 }
 @media screen and (max-width: 1540px) {
   .products__items {
@@ -317,7 +317,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 @media screen and (max-width: 1540px) {
   .products__item {
@@ -405,7 +405,7 @@
 .products__list-nested {
   display: none;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
 }
 @media screen and (max-width: 1540px) {
   .products__list-nested {
@@ -476,8 +476,7 @@
 }
 .products__hero {
   width: 100%;
-  padding-bottom: 60px;
-  padding-left: 100px;
+  padding: 80px 50px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -509,8 +508,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 68px;
-  margin-top: auto;
+  gap: 48px;
 }
 @media screen and (max-width: 1540px) {
   .products__inner {
@@ -534,10 +532,10 @@
 }
 .products__images {
   width: 100%;
-  height: 794px;
+  height: 725px;
   display: flex;
 }
-@media screen and (max-width: 1540px) {
+/* @media screen and (max-width: 1540px) {
   .products__images {
     height: 654px;
   }
@@ -561,14 +559,14 @@
   .products__images {
     height: 450px;
   }
-}
+} */
 @media screen and (max-width: 960px) {
   .products__images {
     height: auto;
   }
 }
 .products__img {
-  max-width: 559px;
+  flex-basis: 50%;
   height: 100%;
 }
 @media screen and (max-width: 1023px) {
@@ -589,8 +587,8 @@
 .products__subtitle {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 42px;
   color: #000;
 }
 @media screen and (max-width: 1440px) {
