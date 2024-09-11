@@ -50,6 +50,7 @@
   font-size: 50px;
   line-height: 60px;
   color: #000;
+  text-indent: 40px;
 }
 @media screen and (max-width: 1440px) {
   .about__text h3 {
@@ -71,6 +72,7 @@
   .about__text h3 {
     font-size: 33px;
     line-height: 45px;
+    text-indent: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -91,11 +93,17 @@
   font-size: 30px;
   line-height: 36px;
   color: #000;
+  text-indent: 40px;
 }
 @media screen and (max-width: 1360px) {
   .about__text p {
     font-size: 25px;
     line-height: 31px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .about__text p {
+    text-indent: 20px;
   }
 }
 @media screen and (max-width: 690px) {
