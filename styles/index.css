@@ -88,8 +88,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 120px;
+  padding-right: 120px;
   box-sizing: border-box;
 }
 
@@ -120,13 +120,13 @@ button {
   }
 }
 .header__logo {
-  width: 75px;
-  height: 37px;
+  width: 87px;
+  height: 47px;
 }
 .header__logo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media screen and (max-width: 1024px) {
   .header__menu {
@@ -140,8 +140,8 @@ button {
 }
 .header__menu ul li a {
   font-family: "SpaceGrotesk-Regular", sans-serif;
-  font-size: 30px;
-  line-height: 1.5em;
+  font-size: 25px;
+  line-height: 31.9px;
   font-weight: 400;
   color: #000;
   letter-spacing: -0.04em;
@@ -174,16 +174,27 @@ button {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 690px) {
+  .header__logo {
+    width: 63px;
+    height: 34px;
+  }
+}
 /*---promo---*/
 .promo {
   width: 100%;
 }
 .promo__wrapper {
   width: 100%;
-  padding: 75px 75px 120px 75px;
+  padding: 95px 120px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .promo__wrapper {
+    padding: 95px 70px;
+  }
 }
 @media screen and (max-width: 960px) {
   .promo__wrapper {
@@ -718,12 +729,12 @@ h1 {
 }
 .footer__item {
   border-right: 1px solid #000;
-  padding: 75px;
+  padding: 100px 120px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 1280px) {
   .footer__item {
-    padding: 45px;
+    padding: 70px;
   }
 }
 @media screen and (max-width: 960px) {
