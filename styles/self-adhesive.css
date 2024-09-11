@@ -702,6 +702,7 @@
   font-size: 50px;
   line-height: 60px;
   color: #000;
+  text-indent: 40px;
 }
 @media screen and (max-width: 1440px) {
   .description__wrapper h3 {
@@ -719,6 +720,7 @@
   .description__wrapper h3 {
     font-size: 30px;
     line-height: 38px;
+    text-indent: 20px;
   }
 }
 @media screen and (max-width: 1023px) {
