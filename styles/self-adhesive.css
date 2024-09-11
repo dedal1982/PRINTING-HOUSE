@@ -782,6 +782,7 @@
   font-size: 30px;
   line-height: 36px;
   color: #000;
+  text-indent: 40px;
 }
 @media screen and (max-width: 1440px) {
   .description__paragraph p {
