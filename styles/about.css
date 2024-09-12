@@ -636,12 +636,14 @@ textarea::placeholder,
 /*---equipment---*/
 .equipment {
   width: 100%;
+  border-bottom: 1px solid #000;
 }
 .equipment__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 95px 35px;
+  gap: 95px;
 }
 @media screen and (max-width: 960px) {
   .equipment__wrapper {
@@ -716,3 +718,7 @@ textarea::placeholder,
   }
 }
 /*---.equipment__swiper---*/
+.equipment__slides {
+  width: 100%;
+  overflow: hidden;
+}
