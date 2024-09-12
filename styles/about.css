@@ -722,3 +722,28 @@ textarea::placeholder,
   width: 100%;
   overflow: hidden;
 }
+.swiper-content_img {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+.swiper-content_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1440px) {
+  .swiper-content_img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-content_img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .swiper-content_img {
+    height: 230px;
+  }
+}
