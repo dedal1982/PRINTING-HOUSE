@@ -998,6 +998,7 @@ h1 {
   gap: 42px;
   padding: 30px;
   box-sizing: border-box;
+  overflow: auto;
 }
 .menu-mobile__wrapper img {
   width: 258px;
