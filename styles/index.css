@@ -998,6 +998,9 @@ h1 {
 .lock {
   overflow: hidden;
 }
+.mobile-img {
+  margin: 0 auto;
+}
 .header__menu_mobile ul {
   display: flex;
   flex-direction: column;
