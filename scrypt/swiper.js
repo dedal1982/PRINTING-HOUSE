@@ -46,12 +46,11 @@ var sliderSelector2 = ".swiper-container-2",
     centeredSlides: true,
     grabCursor: true,
     parallax: true,
-
-    // autoplay: {
-    //   delay: 0,
-    //   enabled: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 0,
+      enabled: true,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -69,9 +68,13 @@ var sliderSelector2 = ".swiper-container-2",
         slidesPerView: 1.5,
         spaceBetween: 0,
       },
+      690: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
       375: {
-        slidesPerView: 1.3,
-        spaceBetween: 40,
+        slidesPerView: 1.2,
+        spaceBetween: 18,
       },
     },
   };
