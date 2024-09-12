@@ -1,5 +1,5 @@
 .about__image_type_product {
-  flex-basis: 70%;
+  width: 70%;
   height: 400px;
 }
 .about__image_type_product img {
@@ -54,13 +54,13 @@
     padding: 60px 35px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .about__wrapper_type_product {
     flex-direction: column;
   }
   .about__image_type_product {
     width: 698px;
-    height: 586px;
+    height: 460px;
   }
   .about__item_type_product:first-child {
     border-right: none;
