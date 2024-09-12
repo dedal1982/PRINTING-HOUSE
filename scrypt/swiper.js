@@ -2,12 +2,17 @@ var sliderSelector = ".swiper-container",
   options = {
     init: false,
     loop: true,
-    speed: 800,
+    speed: 5000,
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
     grabCursor: true,
     parallax: true,
+    autoplay: {
+      delay: 0,
+      enabled: true,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
