@@ -91,7 +91,7 @@
     padding: 32px 35px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .product-gallery__item:not(:last-child) {
     border-right: none;
   }
