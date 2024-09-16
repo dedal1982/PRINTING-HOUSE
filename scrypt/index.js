@@ -86,15 +86,15 @@ const filtersBtn = document.querySelector(".products__filters");
 const itemsProducts = document.querySelector(".products__items");
 const productsMenu = document.querySelector(".products__menu");
 const itemsProductsTitle = document.querySelectorAll(".products__menu-title");
-const itemsProductsList = document.querySelectorAll(".products__list-nested");
+// const itemsProductsList = document.querySelectorAll(".products__list-nested");
 
 if (filtersBtn) {
   filtersBtn.addEventListener("click", () => {
     itemsProducts.classList.toggle("active");
     productsMenu.classList.toggle("active");
-    itemsProductsList.forEach((item) => {
-      item.classList.remove("active");
-    });
+    // itemsProductsList.forEach((item) => {
+    //   item.classList.remove("active");
+    // });
     itemsProductsTitle.forEach((item) => {
       item.classList.remove("active");
     });
