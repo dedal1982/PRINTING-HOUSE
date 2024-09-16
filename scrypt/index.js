@@ -66,39 +66,6 @@ buttonUp.addEventListener("click", function () {
   });
 });
 
-//функция открывающая список продуктов
-// const items = document.querySelectorAll(".products__item");
-
-// function toggleActive(event) {
-//   const currentItem = event.currentTarget;
-//   const nestedList = currentItem.querySelector(".products__list-nested");
-//   const currentTitle = currentItem.querySelector(".products__menu-title");
-
-//   items.forEach((item) => {
-//     const list = item.querySelector(".products__list-nested");
-//     const title = item.querySelector(".products__menu-title");
-
-//     if (list && list !== nestedList) {
-//       list.classList.remove("active");
-//     }
-
-//     if (title && title !== currentTitle) {
-//       title.classList.remove("active");
-//     }
-//   });
-
-//   if (nestedList) {
-//     nestedList.classList.add("active");
-//   }
-
-//   if (currentTitle) {
-//     currentTitle.classList.add("active");
-//   }
-// }
-
-// items.forEach((item) => {
-//   item.addEventListener("click", toggleActive);
-// });
 // Читать полностью...
 const completely = document.querySelector(".description__full");
 const completelyWrap = document.querySelector(".description__paragraph");
@@ -107,10 +74,10 @@ if (completely) {
   completely.addEventListener("click", () => {
     completelyWrap.classList.toggle("description__paragraph_full");
 
-    if (completely.textContent === "Назад") {
+    if (completely.textContent === "Свернуть") {
       completely.textContent = "Читать полностью...";
     } else {
-      completely.textContent = "Назад";
+      completely.textContent = "Свернуть";
     }
   });
 }
