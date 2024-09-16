@@ -422,6 +422,14 @@
     gap: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .products__menu h2 {
+    padding-left: 35px;
+  }
+  .products__item {
+    padding-left: 35px;
+  }
+}
 @media screen and (max-width: 690px) {
   .products__item {
     max-width: 100%;
