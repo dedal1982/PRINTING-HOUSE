@@ -1004,6 +1004,7 @@ h1 {
   padding: 30px;
   box-sizing: border-box;
   overflow: auto;
+  margin-bottom: 100px;
 }
 .menu-mobile__wrapper img {
   width: 258px;
