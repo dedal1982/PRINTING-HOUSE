@@ -306,8 +306,8 @@
 }
 @media screen and (max-width: 767px) {
   .products__menu {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 690px) {
@@ -392,6 +392,12 @@
   .products__items.active {
     display: flex;
     gap: 0;
+  }
+  .products__menu.active {
+    padding-bottom: 0 !important;
+  }
+  .products__items.active .products__item:last-child {
+    border-bottom: none;
   }
 }
 @media screen and (max-width: 1279px) {
