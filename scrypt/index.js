@@ -86,15 +86,11 @@ const filtersBtn = document.querySelector(".products__filters");
 const itemsProducts = document.querySelector(".products__items");
 const productsMenu = document.querySelector(".products__menu");
 const itemsProductsTitle = document.querySelectorAll(".products__menu-title");
-// const itemsProductsList = document.querySelectorAll(".products__list-nested");
 
 if (filtersBtn) {
   filtersBtn.addEventListener("click", () => {
     itemsProducts.classList.toggle("active");
     productsMenu.classList.toggle("active");
-    // itemsProductsList.forEach((item) => {
-    //   item.classList.remove("active");
-    // });
     itemsProductsTitle.forEach((item) => {
       item.classList.remove("active");
     });
@@ -150,3 +146,51 @@ menuLinks.forEach((link) => {
     menuMobile.classList.remove("menu-mobile_open");
   });
 });
+
+//popup оставить заявку
+const popupAppl = document.getElementById("popup-application");
+const popupBtn = document.querySelectorAll(".swiper-btn");
+const closeClose = document.getElementById("close-appl");
+const popapFormInput = document.querySelectorAll(".popap__form input");
+
+popupBtn.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    event.preventDefault();
+    popupAppl.style.display = "block";
+    document.body.classList.add("lock");
+  });
+});
+
+closeClose.onclick = function () {
+  popupAppl.style.display = "none";
+  document.body.classList.remove("lock");
+  popapFormInput.forEach((item) => {
+    item.value = "";
+  });
+};
+
+window.onclick = function (event) {
+  if (event.target == popupAppl) {
+    popupAppl.style.display = "none";
+  }
+};
+
+//popup подписаться на рассылку
+const popupMail = document.getElementById("popup-mailing");
+const mailingBtntn = document.querySelector(".mailing__btn");
+const closeMail = document.getElementById("close-mail");
+
+if (mailingBtntn) {
+  mailingBtntn.addEventListener("click", (event) => {
+    event.preventDefault();
+    popupMail.style.display = "block";
+    document.body.classList.add("lock");
+  });
+}
+
+if (closeMail) {
+  closeMail.addEventListener("click", () => {
+    popupMail.style.display = "none";
+    document.body.classList.remove("lock");
+  });
+}

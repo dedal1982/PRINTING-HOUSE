@@ -7,6 +7,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Главная</title>
   </head>
@@ -94,7 +112,7 @@
             <a class="product__item" href="thermal-checks.html">
               <div class="product__inner">
                 <img class="product__img" src="./icons/2.png" alt="лейбл" />
-                <p>Термочеки и пустышка</p>
+                <p>Термочекии пустышка</p>
                 <span>От 4399р</span>
               </div>
             </a>
@@ -102,7 +120,7 @@
             <a class="product__item" href="jacquard-labeks.html">
               <div class="product__inner">
                 <img class="product__img" src="./icons/3.png" alt="лейбл" />
-                <p>Жаккардовые этикетки</p>
+                <p>Жаккардовыеэтикетки</p>
                 <span>От 4399р</span>
               </div>
             </a>
@@ -122,7 +140,7 @@
             <a class="product__item" href="ribbons-logo.html">
               <div class="product__inner">
                 <img class="product__img" src="./icons/5.png" alt="лейбл" />
-                <p>Ленты с логотипом</p>
+                <p>Лентыс логотипом</p>
                 <span>От 4399р</span>
               </div>
             </a>
@@ -130,7 +148,7 @@
             <a class="product__item" href="textile-labels.html">
               <div class="product__inner">
                 <img class="product__img" src="./icons/6.png" alt="лейбл" />
-                <p>Текстильные печатные этикетки</p>
+                <p>Текстильныепечатные этикетки</p>
                 <span>От 4399р</span>
               </div>
             </a>
@@ -338,9 +356,65 @@
             </div>
           </div>
           <!--copyright-->
-          <div class="footer__copyright">© «ММС», 1997-2024</div>
+          <div id="openPopupBtn" class="footer__copyright">
+            © «ММС», 1997-2024
+          </div>
         </div>
       </footer>
+      <!--оставить заявку -->
+      <div id="popup-application" class="popup">
+        <div class="popap__wrapper">
+          <button id="close-appl" class="popap__close" type="button"></button>
+          <img class="popap__img" src="./images/about-img.jpg" alt="картинка" />
+          <div class="popap__inner">
+            <h3>Оставить заявку</h3>
+            <form class="popap__form" action="" method="">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Ваше имя"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email"
+              />
+              <button class="popup__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--yновостная рассылка -->
+      <div id="popup-mailing" class="popup">
+        <div class="popap__wrapper">
+          <button id="close-mail" class="popap__close" type="button"></button>
+          <img class="popap__img" src="./images/about-img.jpg" alt="картинка" />
+          <div class="popap__inner">
+            <h3>Подписаться на рассылку</h3>
+            <form class="popap__form" action="" method="">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Ваше имя"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email"
+              />
+              <button class="popup__button" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scrypt/swiper.js"></script>
