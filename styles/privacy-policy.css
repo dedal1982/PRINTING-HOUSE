@@ -39,3 +39,23 @@
   line-height: 30px;
   color: #000;
 }
+.privacy__button {
+  width: 387px;
+  height: 70px;
+  border-radius: 37px;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38.28px;
+  color: #000;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.privacy__button:hover {
+  color: #fff;
+  background: #000;
+}
