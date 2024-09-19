@@ -1078,6 +1078,7 @@ h1 {
   z-index: 5;
 }
 .popup__inner {
+  position: relative;
   max-width: 410px;
   width: 100%;
   display: flex;
@@ -1166,8 +1167,8 @@ input:focus {
   width: 26px;
   height: 24px;
   position: absolute;
-  top: 34px;
-  right: 87px;
+  top: 40px;
+  right: 77px;
   z-index: 5;
   background: transparent;
 }
@@ -1213,7 +1214,7 @@ input:focus {
   .popup__close {
     width: 16px;
     height: 14px;
-    top: 25px;
+    top: 30px;
     right: 50px;
   }
   .popup__input {
@@ -1229,14 +1230,27 @@ input:focus {
 }
 @media screen and (max-width: 767px) {
   .popup__wrapper {
-    width: 90%;
+    max-width: 330px;
     padding: 20px;
+    flex-direction: column;
+    background: #fff;
   }
-  .popup__image {
-    display: none;
-  }
+
   .popup__close {
-    top: 10%;
-    right: 50px;
+    top: 10px;
+    right: 10px;
+  }
+  .popup__inner h3 {
+    font-size: 17px;
+  }
+  .popup__input {
+    height: 37px;
+  }
+  .popup__button {
+    height: 33px;
+  }
+  .popup__input::placeholder {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
