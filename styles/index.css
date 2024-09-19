@@ -1050,6 +1050,12 @@ h1 {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.popup-consultation.active {
+  display: flex;
+}
+.popup-application.active {
+  display: flex;
+}
 .popup__wrapper {
   position: relative;
   max-width: 928px;
@@ -1167,7 +1173,7 @@ input:focus {
   width: 26px;
   height: 24px;
   position: absolute;
-  top: 40px;
+  top: 50px;
   right: 77px;
   z-index: 5;
   background: transparent;
@@ -1214,7 +1220,7 @@ input:focus {
   .popup__close {
     width: 16px;
     height: 14px;
-    top: 30px;
+    top: 40px;
     right: 50px;
   }
   .popup__input {

@@ -188,40 +188,35 @@ menuLinks.forEach((link) => {
   });
 });
 
-//popup оставить заявку
-const popupAppl = document.getElementById("popup-application");
-const popupBtn = document.querySelectorAll(".swiper-btn");
-const popupClose = document.querySelector(".popup__close");
-const popapFormInput = document.querySelectorAll(".popap__form input");
-const popapSubmit = document.querySelector(".popup__button");
-const popupInputs = document.querySelectorAll(".popup__input");
+//popup Бесплатная консультация
+const consultationBtn = document.querySelector(".consultation__btn");
+const popupConsultation = document.querySelector(".popup-consultation");
+const popupCloseBtn = popupConsultation.querySelector(".popup__close");
 
-popupBtn.forEach((item) => {
-  item.addEventListener("click", (event) => {
-    event.preventDefault();
-    popupAppl.style.display = "block";
-    document.body.classList.add("lock");
+if (consultationBtn) {
+  consultationBtn.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    popupConsultation.classList.add("active");
   });
-});
-
-if (popupClose) {
-  popupClose.addEventListener("click", () => {
-    popupAppl.style.display = "none";
-    document.body.classList.remove("lock");
+}
+if (popupCloseBtn) {
+  popupCloseBtn.addEventListener("click", () => {
+    popupConsultation.classList.remove("active");
   });
 }
 
-if (popapSubmit) {
-  popapSubmit.addEventListener("click", () => {
-    let allInputsFilled = true;
-    popupInputs.forEach((input) => {
-      if (!input.value.trim()) {
-        allInputsFilled = false;
-      }
-    });
-    if (allInputsFilled) {
-      popupAppl.style.display = "none";
-      document.body.classList.remove("lock");
-    }
+//popup Оставить заявку
+const popupApplication = document.querySelector(".popup-application");
+const popupApplCloseBtn = popupApplication.querySelector(".popup__close");
+const popupApplOpenBtn = document.querySelectorAll(".swiper-btn");
+popupApplOpenBtn.forEach((item) => {
+  item.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    popupApplication.classList.add("active");
+  });
+});
+if (popupApplCloseBtn) {
+  popupApplCloseBtn.addEventListener("click", () => {
+    popupApplication.classList.remove("active");
   });
 }
