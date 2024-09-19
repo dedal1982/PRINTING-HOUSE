@@ -1177,7 +1177,7 @@ input:focus {
 }
 @media screen and (max-width: 960px) {
   .popup__wrapper {
-    max-width: 90%;
+    max-width: 670px;
     padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 37px;
@@ -1225,5 +1225,18 @@ input:focus {
     height: 30px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .popup__wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+  .popup__image {
+    display: none;
+  }
+  .popup__close {
+    top: 10%;
+    right: 50px;
   }
 }
