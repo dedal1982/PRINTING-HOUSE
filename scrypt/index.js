@@ -98,7 +98,6 @@ function toggleDescriptionFull(
 
       if (descriptionFull.textContent === collapseText) {
         descriptionFull.textContent = expandText;
-        // Плавная прокрутка вверх
         window.scrollTo({
           top: 0,
           behavior: "smooth",
@@ -194,6 +193,8 @@ const popupAppl = document.getElementById("popup-application");
 const popupBtn = document.querySelectorAll(".swiper-btn");
 const popupClose = document.querySelector(".popup__close");
 const popapFormInput = document.querySelectorAll(".popap__form input");
+const popapSubmit = document.querySelector(".popup__button");
+const popupInputs = document.querySelectorAll(".popup__input");
 
 popupBtn.forEach((item) => {
   item.addEventListener("click", (event) => {
@@ -210,22 +211,17 @@ if (popupClose) {
   });
 }
 
-//popup подписаться на рассылку
-const popupMail = document.getElementById("popup-mailing");
-const mailingBtntn = document.querySelector(".mailing__btn");
-const closeMail = document.getElementById("popup__close");
-
-if (mailingBtntn) {
-  mailingBtntn.addEventListener("click", (event) => {
-    event.preventDefault();
-    popupMail.style.display = "block";
-    document.body.classList.add("lock");
-  });
-}
-
-if (closeMail) {
-  closeMail.addEventListener("click", () => {
-    popupMail.style.display = "none";
-    document.body.classList.remove("lock");
+if (popapSubmit) {
+  popapSubmit.addEventListener("click", () => {
+    let allInputsFilled = true;
+    popupInputs.forEach((input) => {
+      if (!input.value.trim()) {
+        allInputsFilled = false;
+      }
+    });
+    if (allInputsFilled) {
+      popupAppl.style.display = "none";
+      document.body.classList.remove("lock");
+    }
   });
 }
