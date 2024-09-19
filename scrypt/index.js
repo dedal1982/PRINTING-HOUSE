@@ -192,7 +192,7 @@ menuLinks.forEach((link) => {
 //popup оставить заявку
 const popupAppl = document.getElementById("popup-application");
 const popupBtn = document.querySelectorAll(".swiper-btn");
-const closeClose = document.getElementById("close-appl");
+const popupClose = document.querySelector(".popup__close");
 const popapFormInput = document.querySelectorAll(".popap__form input");
 
 popupBtn.forEach((item) => {
@@ -203,24 +203,17 @@ popupBtn.forEach((item) => {
   });
 });
 
-closeClose.onclick = function () {
-  popupAppl.style.display = "none";
-  document.body.classList.remove("lock");
-  popapFormInput.forEach((item) => {
-    item.value = "";
-  });
-};
-
-window.onclick = function (event) {
-  if (event.target == popupAppl) {
+if (popupClose) {
+  popupClose.addEventListener("click", () => {
     popupAppl.style.display = "none";
-  }
-};
+    document.body.classList.remove("lock");
+  });
+}
 
 //popup подписаться на рассылку
 const popupMail = document.getElementById("popup-mailing");
 const mailingBtntn = document.querySelector(".mailing__btn");
-const closeMail = document.getElementById("close-mail");
+const closeMail = document.getElementById("popup__close");
 
 if (mailingBtntn) {
   mailingBtntn.addEventListener("click", (event) => {
