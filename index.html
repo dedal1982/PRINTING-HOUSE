@@ -363,7 +363,7 @@
           </div>
         </div>
       </footer>
-      <!--оставить заявку-->
+      <!--Оставить заявку-->
       <div class="popup popup-application">
         <div class="popup__wrapper">
           <img class="popup__image" src="./images/promo.png" alt="картинка" />
@@ -419,6 +419,53 @@
           </button>
           <div class="popup__inner">
             <h3>Бесплатная консультация</h3>
+            <form class="popup__form-mailing" action="" method="">
+              <input
+                class="popup__input"
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Ваше имя"
+              />
+
+              <input
+                class="popup__input"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="e-mail"
+              />
+
+              <input
+                class="popup__input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="телефон необязательно"
+              />
+
+              <button class="popup__button" type="submit">Отправить</button>
+              <p>
+                Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие<br />
+                на&nbsp;<a href="privacy-policy.html"
+                  >обработку своих персональных данных</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Подпишитесь на нашу рассылку-->
+      <div class="popup popup-mailing">
+        <div class="popup__wrapper">
+          <img class="popup__image" src="./images/promo.png" alt="картинка" />
+          <button class="popup__close" type="button">
+            <img src="./icons/close.png" alt="закрыть" />
+          </button>
+          <div class="popup__inner">
+            <h3>Подпишитесь на нашу рассылку</h3>
             <form class="popup__form-mailing" action="" method="">
               <input
                 class="popup__input"

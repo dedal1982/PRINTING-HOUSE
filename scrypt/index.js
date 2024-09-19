@@ -199,6 +199,7 @@ if (consultationBtn) {
     popupConsultation.classList.add("active");
   });
 }
+
 if (popupCloseBtn) {
   popupCloseBtn.addEventListener("click", () => {
     popupConsultation.classList.remove("active");
@@ -209,14 +210,36 @@ if (popupCloseBtn) {
 const popupApplication = document.querySelector(".popup-application");
 const popupApplCloseBtn = popupApplication.querySelector(".popup__close");
 const popupApplOpenBtn = document.querySelectorAll(".swiper-btn");
-popupApplOpenBtn.forEach((item) => {
-  item.addEventListener("click", (ev) => {
-    ev.preventDefault();
-    popupApplication.classList.add("active");
+
+if (popupApplOpenBtn) {
+  popupApplOpenBtn.forEach((item) => {
+    item.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      popupApplication.classList.add("active");
+    });
   });
-});
+}
+
 if (popupApplCloseBtn) {
   popupApplCloseBtn.addEventListener("click", () => {
     popupApplication.classList.remove("active");
+  });
+}
+
+//popup Подпишитесь на нашу рассылку
+const popupMailing = document.querySelector(".popup-mailing");
+const popupMailCloseBtn = popupMailing.querySelector(".popup__close");
+const popupMailOpenBtn = document.querySelector(".mailing__btn");
+
+if (popupMailOpenBtn) {
+  popupMailOpenBtn.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    popupMailing.classList.add("active");
+  });
+}
+
+if (popupMailCloseBtn) {
+  popupMailCloseBtn.addEventListener("click", () => {
+    popupMailing.classList.remove("active");
   });
 }
