@@ -1054,13 +1054,18 @@ h1 {
 .popup__wrapper {
   position: relative;
   max-width: 928px;
-  width: 90%;
+  width: 100%;
   height: 387px;
   display: flex;
   background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .popup__bg {
   position: absolute;
@@ -1068,4 +1073,83 @@ h1 {
   right: 0;
   left: 0;
   bottom: 0;
+}
+.popup__image {
+  width: 288px;
+  height: 268px;
+  z-index: 5;
+}
+.popup__inner {
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 5;
+}
+.popup__inner h3 {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+}
+.popup__form-mailing {
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.popup__input {
+  width: 100%;
+  height: 37px;
+  border: 1px solid #000000;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.42px;
+  color: #000;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+input:active,
+input:hover,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.popup__input::placeholder {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.42px;
+  color: #000;
+}
+.popup__button {
+  width: 150px;
+  height: 33px;
+  border-radius: 37px;
+  background: #fff;
+  border: 1px solid #000000;
+  margin-top: 20px;
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.52px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.popup__button:hover {
+  color: #fff;
+  background: #000;
+}
+.popup__close {
+  position: absolute;
+  top: 44px;
+  right: 77px;
+  z-index: 5;
+  background: transparent;
 }
