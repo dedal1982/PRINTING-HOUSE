@@ -1041,7 +1041,6 @@ h1 {
 /*---попап---*/
 .popup {
   display: flex;
-  /* display: none; */
   position: fixed;
   z-index: 999;
   left: 0;
@@ -1055,24 +1054,23 @@ h1 {
   position: relative;
   max-width: 928px;
   width: 100%;
-  height: 387px;
+  height: fit-content;
   display: flex;
   background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 50px;
+  padding-top: 70px;
+  padding-bottom: 45px;
+  padding-left: 67px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   gap: 40px;
-}
-.popup__bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  background: url(../icons/form-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .popup__image {
   width: 288px;
@@ -1095,12 +1093,30 @@ h1 {
   color: #000;
 }
 .popup__form-mailing {
-  max-width: 410px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 7px;
+}
+.popup__form-mailing p,
+.popup__form-mailing a {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000;
+  align-self: flex-start;
+}
+.popup__form-mailing p {
+  margin-top: 20px;
+}
+.popup__form-mailing a {
+  border-bottom: 1px solid #000000;
+  transition: all 0.2s ease-in-out;
+}
+.popup__form-mailing a:hover {
+  opacity: 0.7;
 }
 .popup__input {
   width: 100%;
@@ -1147,9 +1163,67 @@ input:focus {
   background: #000;
 }
 .popup__close {
+  width: 26px;
+  height: 24px;
   position: absolute;
-  top: 44px;
-  right: 77px;
+  top: 34px;
+  right: 87px;
   z-index: 5;
   background: transparent;
+}
+.popup__close img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 960px) {
+  .popup__wrapper {
+    max-width: 90%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 37px;
+    gap: 20px;
+  }
+  .popup__image {
+    width: 228px;
+    height: 208px;
+    z-index: 5;
+  }
+  .popup__inner {
+    max-width: 300px;
+    gap: 10px;
+  }
+  .popup__inner h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .popup__form-mailing p,
+  .popup__form-mailing a {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .popup__form-mailing {
+    gap: 5px;
+  }
+  .popup__button {
+    margin-top: 10px;
+  }
+  .popup__form-mailing p {
+    margin-top: 10px;
+  }
+  .popup__close {
+    width: 16px;
+    height: 14px;
+    top: 25px;
+    right: 50px;
+  }
+  .popup__input {
+    font-size: 16px;
+    line-height: 16px;
+    height: 35px;
+  }
+  .popup__button {
+    height: 30px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
