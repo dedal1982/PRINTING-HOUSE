@@ -67,20 +67,62 @@ buttonUp.addEventListener("click", function () {
 });
 
 // Читать полностью...
-const completely = document.querySelector(".description__full");
-const completelyWrap = document.querySelector(".description__paragraph");
+// const completely = document.querySelector(".description__full");
+// const completelyWrap = document.querySelector(".description__paragraph");
 
-if (completely) {
-  completely.addEventListener("click", () => {
-    completelyWrap.classList.toggle("description__paragraph_full");
+// if (completely) {
+//   completely.addEventListener("click", () => {
+//     completelyWrap.classList.toggle("description__paragraph_full");
 
-    if (completely.textContent === "Свернуть") {
-      completely.textContent = "Читать полностью...";
-    } else {
-      completely.textContent = "Свернуть";
-    }
-  });
+//     if (completely.textContent === "Свернуть") {
+//       completely.textContent = "Читать полностью...";
+//     } else {
+//       completely.textContent = "Свернуть";
+//     }
+//   });
+// }
+function toggleDescriptionFull(
+  descriptionFullSelector,
+  descriptionParagraphSelector,
+  expandText,
+  collapseText
+) {
+  const descriptionFull = document.querySelector(descriptionFullSelector);
+  const descriptionParagraph = document.querySelector(
+    descriptionParagraphSelector
+  );
+
+  if (descriptionFull) {
+    descriptionFull.addEventListener("click", () => {
+      descriptionParagraph.classList.toggle("description__paragraph_full");
+
+      if (descriptionFull.textContent === collapseText) {
+        descriptionFull.textContent = expandText;
+        // Плавная прокрутка вверх
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        descriptionFull.textContent = collapseText;
+      }
+    });
+  }
 }
+
+toggleDescriptionFull(
+  ".description__full",
+  ".description__paragraph",
+  "Читать полностью...",
+  "Свернуть"
+);
+
+toggleDescriptionFull(
+  ".privacy__button",
+  ".privacy__inner",
+  "Читать полностью...",
+  "Свернуть"
+);
 //фильтры
 const filtersBtn = document.querySelector(".products__filters");
 const itemsProducts = document.querySelector(".products__items");
