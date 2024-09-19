@@ -9,6 +9,19 @@
   align-items: center;
   gap: 50px;
 }
+@media screen and (max-width: 1440px) {
+  .privacy__wrapeer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .privacy__wrapeer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+}
 .privacy__wrapeer h2 {
   font-family: "SpaceGrotesk-Regular", sans-serif;
   font-weight: 400;
@@ -17,6 +30,18 @@
   color: #000;
   max-width: 1147px;
   width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .privacy__wrapeer h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .privacy__wrapeer h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 .privacy__inner {
   max-width: 1302px;
@@ -30,6 +55,56 @@
 .privacy__inner.description__paragraph_full {
   max-height: fit-content;
 }
+@media screen and (max-width: 1440px) {
+  .privacy__inner {
+    max-height: 1005px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .privacy__inner {
+    max-height: 1045px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .privacy__inner {
+    max-height: 1105px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .privacy__inner {
+    max-height: 855px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .privacy__inner {
+    max-height: 905px;
+  }
+}
+@media screen and (max-width: 912px) {
+  .privacy__inner {
+    max-height: 955px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .privacy__inner {
+    max-height: 1175px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .privacy__inner {
+    max-height: 1155px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .privacy__inner {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .privacy__inner {
+    max-height: 1298px;
+  }
+}
 .privacy__paragraph {
   display: flex;
   flex-direction: column;
@@ -41,6 +116,32 @@
   font-size: 30px;
   line-height: 30px;
   color: #000;
+}
+@media screen and (max-width: 1440px) {
+  .privacy__paragraph p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .privacy__paragraph p {
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 20px;
+  }
+}
+@media screen and (max-width: 779px) {
+  .privacy__paragraph p {
+    font-size: 19px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .privacy__paragraph p {
+    font-size: 16px;
+    line-height: 16px;
+    text-indent: 10px;
+  }
 }
 .privacy__button {
   width: 387px;
@@ -61,4 +162,13 @@
 .privacy__button:hover {
   color: #fff;
   background: #000;
+}
+@media screen and (max-width: 690px) {
+  .privacy__button {
+    width: 176px;
+    height: 29px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20.42px;
+  }
 }
